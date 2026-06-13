@@ -2,9 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Политика конфиденциальности | Колесо Фортуны</title>
+    <title>Privacy Policy | Spin Wheel – Fortune</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+        h1 { color: #333; }
+        p, li { color: #555; }
+    </style>
 </head>
 <body>
+
+<!-- Русская версия (показывается, если язык браузера русский) -->
+<div id="ru" style="display: none;">
     <h1>Политика конфиденциальности</h1>
     <p>Приложение "Колесо Фортуны — Случайный выбор" не собирает личные данные пользователей.</p>
     <p>Для показа рекламы мы используем Google AdMob. AdMob может автоматически собирать и обрабатывать следующие данные:</p>
@@ -17,5 +25,33 @@
     <p>Мы не передаём данные третьим лицам.</p>
     <p>Контактный email: spinwheel.fortune@gmail.com</p>
     <p><em>Последнее обновление: 13 июня 2026</em></p>
+</div>
+
+<!-- Английская версия (по умолчанию) -->
+<div id="en">
+    <h1>Privacy Policy</h1>
+    <p>The "Spin Wheel – Fortune" application does not collect personal data of users.</p>
+    <p>We use Google AdMob to display advertisements. AdMob may automatically collect and process the following data:</p>
+    <ul>
+        <li>Advertising ID of the device</li>
+        <li>IP address</li>
+        <li>Data about interaction with advertisements</li>
+    </ul>
+    <p>This data is used to show personalized ads. You can opt out of ad personalization in your device settings.</p>
+    <p>We do not share data with third parties.</p>
+    <p>Contact email: spinwheel.fortune@gmail.com</p>
+    <p><em>Last updated: June 13, 2026</em></p>
+</div>
+
+<script>
+    // Автоматически показываем нужный язык
+    var userLang = navigator.language || navigator.userLanguage;
+    if (userLang.startsWith('ru')) {
+        document.getElementById('ru').style.display = 'block';
+    } else {
+        document.getElementById('en').style.display = 'block';
+    }
+</script>
+
 </body>
 </html>
